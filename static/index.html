@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chat app</title>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+	<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+	<h2> project: chat-app</h2>
+	<div id="username-section">
+		<label for="username">Enter your name:</label>
+		<input type="text" id="username" placeholder="Enter your name">
+		<button onclick="setUsername()">Set Username</button>
+	</div>
+
+	<div id="chat-section" style="display: none;">
+        <div id="msglist"></div>
+        <input id="msgbox" placeholder="Type a message"></input>
+        <button onclick="send()">Send</button>
+    </div>
+	<script src='static/main.js'> </script>
+
+</body>
+</html>
